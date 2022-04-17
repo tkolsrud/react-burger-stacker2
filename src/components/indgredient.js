@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 class Ingredient extends Component {
     render() {
         return (
-            <h3>Ingredient</h3>
+            <p>{this.props.name}</p>
         )
     }
 }
