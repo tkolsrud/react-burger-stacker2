@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import BurgerPane from './components/burgerPane'
+import Stack from './components/stack'
+// import Ingredient from './components/ingredient'
+// import ClearStack from './components/clearStack'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Burger Stacker App</h1>
+      <BurgerPane />
+      <Stack />
     </div>
   );
 }
