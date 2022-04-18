@@ -1,10 +1,10 @@
 import './App.css';
-import BurgerStack from './components/burgerStack'
+import BurgerStacker from './components/burgerStacker'
 
 
 function App() {
   return(
-    <BurgerStack />
+    <BurgerStacker />
   )
 }
 
