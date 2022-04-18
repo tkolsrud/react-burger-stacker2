@@ -1,11 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-class ClearStack extends Component {
-    render() {
-        return (
-            <button>Clear Stack</button>
+const ClearStack = (props) => {
+
+    return (
+            <button onClick={props.clear}>Clear Stack</button>
         )
-    }
 }
 
 export default ClearStack

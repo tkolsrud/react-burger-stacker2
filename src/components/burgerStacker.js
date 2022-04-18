@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import IngredientPane from './ingredientPane'
+import StackPane from './stackPane'
 
 
 const BurgerStacker = () => {
@@ -19,7 +20,7 @@ const BurgerStacker = () => {
         {name: 'Onion', color: 'lightyellow'}
       ]
 
-    const [ingList, setIngList] = useState(['testing'])     
+    const [ingList, setIngList] = useState([])     
 
     const addIngredient = (e) => {
         console.log(e.target)
@@ -28,10 +29,16 @@ const BurgerStacker = () => {
         setIngList(()=>[{name: ingName, color: ingColor}, ...ingList])
     }
 
+    const clearIngredients = (e) => {
+        setIngList(() => [])
+    }
+
+
     return (
         <>
         <h1>Burger Stacker App</h1>
         <IngredientPane ingredients={ingredients} addIngredient={addIngredient}/>
+        <StackPane ingredients={ingList} clearIngredients={clearIngredients}/>
         </>
     )
 }
